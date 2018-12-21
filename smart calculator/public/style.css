@@ -1,0 +1,293 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: #2f2f2f;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+ /* background-color: cyan; */
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+/*diffrent class buttons*/
+
+button {
+  font-size: 16px;
+  border-radius: 50px;
+  background-color: lightgrey;
+  border: 10px solid lightgrey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+  margin: 0px 0px 40px 0px;
+}
+
+button:hover {
+  background-color: lightgrey;
+}
+
+button:active {
+  box-shadow: none;
+  background-color: grey;
+  border: 10px solid grey;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+/* divs to wap stuff*/
+div.ex1 {
+  width: 100px;
+  background-color: yellow;
+}
+
+div.ex2 {
+  width: 300px;
+  height: 700px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #00FF00; 
+  margin: 10px 0px -1000px 350px;
+}
+
+p.ex1 {
+padding: 0px;
+  max-width: 1000px;
+  border-radius: 10px;
+  font-size: 30px;
+  color: rgba(250, 250, 250, 1);
+}
+
+p {
+padding: 0px;
+  max-width: 1000px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: rgba(250, 250, 250, 1);
+}
+
+div.ex3 {
+  width: 550px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #939393;
+  margin: 170px 0px 0px 0px;
+  float: right;
+}
+
+div.ex4 {
+  width: 1620px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #0c0c0c;
+}
+
+div.ex5 {
+  width: 400px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #750707;
+  margin: 0px 0px 0px 0px;
+}
+
+/*-------------FONTS-------------*/
+
+/*--------------\/ FONTS \/------------------------*/
+
+h1 {
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  max-width: 700px;
+  border-radius: 10px;
+  font-size: 40px;
+  color: rgba(250, 250, 250, 1); 
+}
+
+h8 {
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  max-width: 700px;
+  border-radius: 10px;
+  font-size: 40px;
+  color: #f9a02a; 
+  z-index: 11;
+}
+
+h10 {
+  padding: 0px;
+  margin: 0 auto 0 260px;
+  max-width: 700px;
+  border-radius: 10px;
+  font-size: 40px;
+  color: #f2300e; 
+}
+
+h11 {
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  max-width: 700px;
+  border-radius: 10px;
+  font-size: 40px;
+  color: #faff05; 
+  z-index: 11;
+}
+
+h12 {
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  max-width: 700px;
+  border-radius: 10px;
+  font-size: 40px;
+  color: #06e8a0; 
+  z-index: 11;
+}
+
+h13 {
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  max-width: 700px;
+  border-radius: 10px;
+  font-size: 40px;
+  color: #f2f759; 
+  z-index: 11; 
+}
+
+h16 {
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  max-width: 700px;
+  border-radius: 10px;
+  font-size: 40px;
+  color: #ff0066; 
+  z-index: 11;
+}
+
+
+/*------------/\ SUBTITLES /\-----------------*/
+h17 {
+  padding: 0px;
+  margin: 0px auto 0px 80px;
+  max-width: 700px;
+  border-radius: 10px;
+  color: rgba(250, 250, 250, 1); 
+  z-index: 11;
+}
+
+h3 {
+  padding: 0px;
+  margin: 0 auto 15px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  color: rgba(250, 250, 250, 1); 
+  z-index: 11;
+}
+
+h4 {
+  padding: 0px;
+  margin: 0 auto 20px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  color: #e00808; 
+  z-index: 11;
+}
+
+h5 {
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  max-width: 700px;
+  border-radius: 10px;
+  color: #a8d2f7; 
+  z-index: 11;
+}
+
+h6 {
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  max-width: 700px;
+  border-radius: 10px;
+  color: #ff47c7; 
+  z-index: 11;
+}
+
+h7 {
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  max-width: 700px;
+  border-radius: 10px;
+  color: #6878f2; 
+  z-index: 11;
+}
+
+h14 {
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  max-width: 700px;
+  border-radius: 10px;
+  color: #f77809; 
+  z-index: 11;
+}
+
+heavymargin {
+  padding: 0px;
+  margin: 30px auto 0px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  color: rgba(250, 250, 250, 1); 
+  z-index: 11;
+}
+
+/*Calc style*/

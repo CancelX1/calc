@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Smart Calculator</title>
+    <meta name="description" content="Smart Calculator">
+  <!--  <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon"> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+    <script>
+var string_amm = 1
+function addstr() {
+string_amm++
+document.getElementById("string holder").innerHTML = document.getElementById("string holder").innerHTML + '<br> <input type="text" placeholder="String ' + string_amm + '" id = "str' + string_amm + '"/>'
+}
+
+} 
+  
+</script>
+  </head>
+  <body>
+    <header>
+      <h1> 
+      Custom Calculator
+      </h1>
+    </header>
+    <br>
+    
+    <input name="name" type="text" placeholder="Equation Name">
+
+    <main>
+      <form>
+        <input name="name" type="text" maxlength="1000" placeholder="Variable name" aria-labelledby="submit-name">
+        <br>
+        <button type="submit" id="submit-name">Create Variable</button>
+      </form>
+    
+    <button type="submit" id="clear-names">Delete Variable</button>
+      
+    <p class = "ex1">Variables:</p>
+      
+      <section class="name">
+        <ul id="name"></ul>
+      </section>
+    </main>
+  
+   
+<!-- set up input
+
+
+}{"""""        \/ Edit Boxes \/
+-->
+  <!-- import the webpage's client-side javascript file -->
+  
+
+<button type="submit" id="add-string" onclick = "addstr()">Add String</button>
+  <p>Pro Tip: start each string with <b>var ans = </b></p>
+<div id = "string holder">
+<input type="text" placeholder="String 1" id = "str1"/>
+</div>
+  
+<button type="submit" id="submint">Submint Strings</button>
+<br><br><br><br>
+<button type="start" id="goTo">Go to Smart calculator Dashboard</button>
+<br><br>
+
+
+</body>
+</html>

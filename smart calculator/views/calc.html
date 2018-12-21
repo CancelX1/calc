@@ -1,0 +1,200 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">   
+    <script src="myjs.js"></script>
+
+</head>
+  
+  <style>
+    input {
+  height: 100px;
+  width: 215px;
+  padding-right: 10px;
+  font-size: 25px;
+  background-color: skyblue;
+  text-align: right;
+  border: 5px solid white;
+  box-shadow: inset 0 0 20px 3px black
+}
+
+.btn {
+  height: 50px;
+  width: 50px;
+  margin-left: 2px;
+  text-align: center;
+  margin-top: 2px;
+  background-color: #074b89;
+  color: white;
+  border: 0px;
+  border-radius:5px;
+ 
+}
+
+table {
+  border: 1px solid white;
+  background-color: black;
+  box-shadow: 0px 0px 18px 2px black;
+  margin-top: 5px;
+  border-collapse: collapse;
+   margin-left: 7px;
+}
+
+.btn:hover {
+  color: black;
+  background-color: skyblue;
+  border: 1px solid #0d82e1;
+}
+
+.btn:focus {
+  color: white;
+}
+
+.wrapper {
+  margin-top: 50px;
+  height: 425px;
+  width: 230px;
+  text-align: center;
+  box-shadow: 0px 0px 20px 5px black;
+  margin: 0 auto;
+  border: 7px solid white;
+  background-color: #0d82e1;
+}
+
+i {
+  font-size: 25px;
+  color: white;
+  text-shadow: 0px 0px 20px black;
+}
+
+body {
+  background-color: skyblue;
+  font-family: electroliZe;
+  width: 100%;
+  height: 100%;
+}
+
+.display {
+  box-shadow: 0px 0px 18px 2px black;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    margin: 0 auto;
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  </style>
+
+<body>
+
+<br>
+<br>
+
+
+    <div class="wrapper">
+
+        <div class="display">
+            <form>
+                <input readonly type="text" id="songTextInput" size="20" placeholder="">
+
+            </form>
+        </div>
+
+
+        <table>
+            <tr>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(14)">π</button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="square()">x <sup>2</sup></button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="delf()">ce</button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="cls(17)">ac</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(7)">7</button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(8)">8</button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(9)">9</button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(11)">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(4)">4</button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(5)">5</button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(6)">6</button>
+                </td>
+
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(12)">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(1)">1</button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(2)">2</button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(3)">3</button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(13)">X</button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display(0)">0</button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn" onclick="display('.')">. </button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn btn-lg" class="btn" onclick="eva()">=</button>
+                </td>
+                <td>
+                    <button class="btn btn-lg" class="btn btn-lg" class="btn" onclick="display('/')">/</button>
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>
